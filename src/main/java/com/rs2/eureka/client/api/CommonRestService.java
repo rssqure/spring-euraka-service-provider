@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommonRestService {
 	Logger logger = LogManager.getLogger(CommonRestService.class.getName());
 	
-    @RequestMapping("/service")
+    @RequestMapping("/provider/service")
     public String service() {
     		logger.trace("In common service");
         return "Hello from Common Service!";
